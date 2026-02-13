@@ -1,0 +1,29 @@
+{
+    "current_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "temperature_2m": "\u00b0C",
+        "relative_humidity_2m": "%",
+        "apparent_temperature": "\u00b0C",
+        "is_day": "",
+        "precipitation": "mm",
+        "weather_code": "wmo code",
+        "cloud_cover": "%",
+        "pressure_msl": "hPa",
+        "surface_pressure": "hPa",
+        "wind_speed_10m": "km/h"
+    },
+    "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "\u00b0C",
+        "relative_humidity_2m": "%",
+        "dew_point_2m": "\u00b0C",
+        "precipitation_probability": "%",
+        "precipitation": "mm",
+        "weather_code": "wmo code",
+        "pressure_msl": "hPa",
+        "surface_pressure": "hPa",
+        "wind_speed_10m": "km/h",
+        "cloud_cover": "%"
+    }
+}
