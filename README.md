@@ -9,7 +9,7 @@
 # Polish Weather Data Engineering Project
 A data engineering project focused on collecting, storing, and visualizing weather forecast data for cities across Poland using the Open-Meteo API.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project builds a complete data pipeline to:
 - Fetch weather forecast data from Open-Meteo API for Polish cities
@@ -17,7 +17,7 @@ This project builds a complete data pipeline to:
 - Orchestrate data collection with Apache Airflow
 - Visualize weather patterns and forecast accuracy
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Open-Meteo API
@@ -46,7 +46,7 @@ Visualizations:
 - Cron jobs for lightweight scheduled tasks
 - Optional: Flask API for data serving
 
-## 💡 Project Ideas
+## Project Ideas
 
 ### 1. Forecast Accuracy Tracking
 **Goal:** Measure how accurate weather forecasts are over time
@@ -104,7 +104,7 @@ Visualizations:
 - When do forecasts "settle" into their final values?
 - Which variables stabilize earliest (temperature vs precipitation)?
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Data Collection
 - **Python 3.x** - Primary programming language
@@ -128,7 +128,7 @@ Visualizations:
 - **Vega-Lite** - Declarative web visualizations
 - **Matplotlib/Seaborn** - Static analysis plots
 
-## 📊 Database Schema (Draft)
+## Database Schema (Draft)
 
 ### Table: `cities`
 - `id` (PK)
@@ -159,7 +159,7 @@ Visualizations:
 - `precipitation`
 - (Same fields as forecasts for comparison)
 
-## 🚀 Implementation Roadmap
+##  Implementation Roadmap
 
 ### Phase 1: MVP (Minimum Viable Pipeline)
 - [ ] Set up PostgreSQL on Raspberry Pi
@@ -196,7 +196,7 @@ Visualizations:
 - [ ] Add regional pattern analysis
 - [ ] Optimize query performance
 
-## 📝 Development Notes
+##  Development Notes
 
 ### Open-Meteo API
 - **Endpoint:** `https://api.open-meteo.com/v1/forecast`
@@ -261,14 +261,14 @@ from sqlalchemy import create_engine
 engine = create_engine('postgresql://user:password@raspberry_pi_ip:5432/weather_poland')
 ```
 
-## 📚 Resources
+##  Resources
 
 - [Open-Meteo API Documentation](https://open-meteo.com/en/docs)
 - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
 - [Apache Airflow Documentation](https://airflow.apache.org/docs/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 
-## 🎨 Visualization Ideas
+##  Visualization Ideas
 
 ### Dashboard 1: Real-time Overview
 - Current forecast for all major Polish cities
@@ -294,11 +294,11 @@ engine = create_engine('postgresql://user:password@raspberry_pi_ip:5432/weather_
 - Extreme weather predictions
 - Alert timeline
 
-## 🤝 Contributing
+##  Contributing
 
 This is a personal learning project, but ideas and suggestions are welcome!
 
-## 📄 License
+##  License
 
 Open for personal and educational use.
 
