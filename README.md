@@ -307,3 +307,6 @@ Open for personal and educational use.
 **Last Updated:** February 2026
 **Status:** Planning Phase
 **Next Steps:** Set up PostgreSQL on Raspberry Pi and create initial database schema
+
+**Sqlite** Cool for prototyping:
+![alt text](image.png)

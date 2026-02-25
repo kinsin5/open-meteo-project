@@ -1,11 +1,11 @@
-CREATE TABLE api_call (
+CREATE TABLE IF NOT EXISTS api_call (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     call_timestamp TEXT DEFAULT (datetime('now')),
     status TEXT,
     cities_fetched INTEGER
 );
 
-CREATE TABLE city (
+CREATE TABLE IF NOT EXISTS city (
     id INTEGER PRIMARY KEY,
     name TEXT,
     latitude REAL,
@@ -15,7 +15,7 @@ CREATE TABLE city (
 
 );
 
-CREATE TABLE weather_current (
+CREATE TABLE IF NOT EXISTS weather_current (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     api_call_id  INTEGER REFERENCES api_call(id),
     city_id  INTEGER REFERENCES city(id),
@@ -33,7 +33,7 @@ CREATE TABLE weather_current (
     wind_speed_10m REAL
 );
 
-CREATE TABLE weather_forecast(
+CREATE TABLE IF NOT EXISTS weather_forecast(
     id  INTEGER PRIMARY KEY AUTOINCREMENT,
     api_call_id  INTEGER REFERENCES api_call(id),
     city_id  INTEGER REFERENCES city(id),
