@@ -19,7 +19,11 @@ polish_cities_map = [
     "Katowice",    # South (Silesia)
     "Bialystok",   # Northeast
     "Olsztyn",     # North
-    "Rzeszow"      # Southeast
+    "Rzeszow",     # Southeast
+    "Zielona Gora",
+    "Opole",
+    "Torun",
+    "Kielce"
 ]
 
 URL = 'https://geocoding-api.open-meteo.com/v1/search'
