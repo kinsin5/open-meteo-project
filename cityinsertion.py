@@ -5,7 +5,7 @@ from typing import List
 
 conn = sqlite3.connect('db/weather.db')
 
-c = conn.cursor()
+cursor = conn.cursor()
 
 polish_cities_map = [
     "Warsaw",      # Central
@@ -70,7 +70,7 @@ def fetch_cities(cities: list) -> List[City]:
 def insert_cities(cities: List[City]):
     with conn:
         for city in cities:
-            c.execute("""INSERT OR IGNORE INTO city 
+            cursor.execute("""INSERT OR IGNORE INTO city 
                       VALUES (:id, :name, :latitude, :longitude, 
                       :voivodeship, :elevation)""", 
                       {
@@ -84,8 +84,8 @@ def insert_cities(cities: List[City]):
 
 def check_results():
     with conn:
-        c.execute('SELECT * FROM city')
-        results = c.fetchall()
+        cursor.execute('SELECT * FROM city')
+        results = cursor.fetchall()
         print(type(results))
         print(results)
 
