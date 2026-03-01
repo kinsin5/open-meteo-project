@@ -20,7 +20,6 @@ CREATE TABLE IF NOT EXISTS weather_current (
     api_call_id  INTEGER REFERENCES api_call(id),
     city_id  INTEGER REFERENCES city(id),
     time  TEXT,
-    interval_seconds INTEGER,
     temperature_2m REAL,
     relative_humidity_2m REAL,
     apparent_temperature REAL,
