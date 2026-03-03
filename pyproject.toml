@@ -3,9 +3,11 @@ name = "open-meteo-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13, <3.14"
 dependencies = [
     "ipykernel>=7.2.0",
-    "pandas>=3.0.1",
+    "pandas>=2.0.0,<3",
+    "pydeck>=0.9.1",
     "requests>=2.32.5",
+    "streamlit>=1.40.0",
 ]
